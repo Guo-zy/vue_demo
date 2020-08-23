@@ -3,12 +3,12 @@
     <tab-bar-item path="/home">
       <img
         slot="img-active"
-        src="../assets/tabBar/true.png"
+        src="~assets/tabBar/true.png"
         alt=""
       >
       <img
         slot="img-default"
-        src="../assets/tabBar/car.png"
+        src="~assets/tabBar/car.png"
         alt=""
       >
       <div slot="text">首页</div>
@@ -16,12 +16,12 @@
     <tab-bar-item path="/category">
       <img
         slot="img-active"
-        src="../assets/tabBar/true.png"
+        src="~assets/tabBar/true.png"
         alt=""
       >
       <img
         slot="img-default"
-        src="../assets/tabBar/car.png"
+        src="~assets/tabBar/car.png"
         alt=""
       >
       <div slot="text">分类</div>
@@ -29,12 +29,12 @@
     <tab-bar-item path="/cart">
       <img
         slot="img-active"
-        src="../assets/tabBar/true.png"
+        src="~assets/tabBar/true.png"
         alt=""
       >
       <img
         slot="img-default"
-        src="../assets/tabBar/car.png"
+        src="~assets/tabBar/car.png"
         alt=""
       >
       <div slot="text">购物车</div>
@@ -42,12 +42,12 @@
     <tab-bar-item path="/profile">
       <img
         slot="img-active"
-        src="../assets/tabBar/true.png"
+        src="~assets/tabBar/true.png"
         alt=""
       >
       <img
         slot="img-default"
-        src="../assets/tabBar/car.png"
+        src="~assets/tabBar/car.png"
         alt=""
       >
       <div slot="text">我的</div>
@@ -57,8 +57,8 @@
 </template>
 
 <script>
-import TabBar from "./tabBar/TabBar"
-import TabBarItem from "./tabBar/TabBarItem"
+import TabBar from "components/common/tabBar/TabBar"
+import TabBarItem from "components/common/tabBar/TabBarItem"
 export default {
   name: 'MainTabBar',
   components: {
