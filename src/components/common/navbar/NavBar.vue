@@ -23,17 +23,17 @@ export default {
 .nav-bar {
   display: flex;
   height: 44px;
+  line-height: 44px;
+  text-align: center;
+  box-shadow: 0px 1px 1px rgba(100, 100, 100, 0.3);
 }
 .left {
   width: 60px;
-  background-color: red;
 }
 .middle {
   flex: 1;
-  background-color: black;
 }
 .right {
-  background-color: red;
   width: 60px;
 }
 </style>
