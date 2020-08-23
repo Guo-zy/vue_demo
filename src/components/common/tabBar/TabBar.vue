@@ -20,5 +20,6 @@ export default {
   height: 49px;
   background: #f6f6f6;
   box-shadow: 0px -2px 1px rgba(100, 100, 100, 0.1);
+  z-index: 999;
 }
 </style>
