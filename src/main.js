@@ -1,8 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router/index';
+import Router from 'vue-router';
 
-Vue.config.productionTip = false
+const originalPush = Router.prototype.push;
+
+Router.prototype.push = function push(location) {
+    return originalPush.call(this, location).catch(err => err);
+};
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+    render: h => h(App),
+    router,
+}).$mount('#app');

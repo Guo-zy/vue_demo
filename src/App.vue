@@ -1,19 +1,20 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <main-tab-bar />
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MainTabBar from "./components/MainTabBar"
 export default {
-  name: 'App',
+  name: '',
   components: {
-    HelloWorld,
-  },
+    MainTabBar
+  }
 }
 </script>
 
-<style>
+<style scoped>
+@import url("./assets/css/base.css");
 </style>
